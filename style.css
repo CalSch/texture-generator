@@ -1,0 +1,26 @@
+.split-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 5px;
+}
+.split-left  { grid-area: 1 / 1 / 2 / 2; }
+.split-right { grid-area: 1 / 2 / 2 / 3; }
+
+.split-container > div {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+canvas {
+    border: 1px solid black;
+}
+label {
+    vertical-align: top;
+}
+button {
+    padding: 4px 8px;
+    margin: 3px;
+}
